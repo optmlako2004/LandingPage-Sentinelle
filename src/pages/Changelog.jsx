@@ -1,9 +1,23 @@
 export default function Changelog() {
   const releases = [
     {
+      version: '1.3.0',
+      date: '13 mars 2026',
+      tag: 'Derniere version',
+      changes: [
+        { type: 'feature', text: 'Auto-Deploy : merge automatique des PRs, deploiement sur le serveur et verification post-deploy.' },
+        { type: 'feature', text: 'Webhook GitHub : les push sur main declenchent automatiquement le deploiement.' },
+        { type: 'feature', text: 'Deploy logs : historique complet des deploiements avec output et verification.' },
+        { type: 'improvement', text: 'Pause du monitoring pendant les deploiements pour eviter les faux incidents (502).' },
+        { type: 'improvement', text: 'Deploy lock (cooldown 2 min) contre les cascades de deploiements.' },
+        { type: 'fix', text: 'Correction du bug de doublons d\'incidents quand le status est "fixing".' },
+        { type: 'fix', text: 'Skip automatique des erreurs 429 dans l\'auto-fix (rate limit ≠ bug de code).' },
+      ],
+    },
+    {
       version: '1.2.0',
       date: '10 mars 2026',
-      tag: 'Derniere version',
+      tag: null,
       changes: [
         { type: 'feature', text: 'Integration Discord : recevez vos alertes directement dans vos channels Discord.' },
         { type: 'feature', text: 'Export CSV des incidents depuis le dashboard.' },

@@ -92,9 +92,10 @@ export default function Documentation() {
                 <tr><td>Alertes temps reel</td><td><i className="fa-solid fa-check accent" /></td><td><i className="fa-solid fa-check accent" /></td></tr>
                 <tr><td>Rapports PDF</td><td><i className="fa-solid fa-check accent" /></td><td><i className="fa-solid fa-check accent" /></td></tr>
                 <tr><td>Pentest OWASP</td><td><i className="fa-solid fa-check accent" /></td><td><i className="fa-solid fa-check accent" /></td></tr>
-                <tr><td>Generation de patches</td><td><i className="fa-solid fa-xmark muted" /></td><td><i className="fa-solid fa-check accent" /></td></tr>
+                <tr><td>Generation de patches IA</td><td><i className="fa-solid fa-xmark muted" /></td><td><i className="fa-solid fa-check accent" /></td></tr>
                 <tr><td>Pull Requests GitHub</td><td><i className="fa-solid fa-xmark muted" /></td><td><i className="fa-solid fa-check accent" /></td></tr>
-                <tr><td>Rollback automatique</td><td><i className="fa-solid fa-xmark muted" /></td><td><i className="fa-solid fa-check accent" /></td></tr>
+                <tr><td>Auto-merge et deploy</td><td><i className="fa-solid fa-xmark muted" /></td><td><i className="fa-solid fa-check accent" /></td></tr>
+                <tr><td>Verification post-deploy</td><td><i className="fa-solid fa-xmark muted" /></td><td><i className="fa-solid fa-check accent" /></td></tr>
               </tbody>
             </table>
           </div>

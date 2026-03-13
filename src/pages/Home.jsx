@@ -192,7 +192,7 @@ export default function Home() {
               { icon: 'fa-shield-halved', title: 'Pentest automatique', desc: 'Tests OWASP Top 10 : injection SQL, XSS, CSRF, brute force, IDOR, directory traversal, data leak.' },
               { icon: 'fa-file-pdf', title: 'Rapports PDF', desc: 'Generation automatique de rapports detailles avec KPIs, uptime, incidents, diagnostics IA et resume pentest.' },
               { icon: 'fa-bolt', title: 'Temps reel', desc: 'Dashboard avec mise a jour en temps reel via WebSocket. Alertes instantanees sur incidents critiques.' },
-              { icon: 'fa-code-pull-request', title: 'Auto-fix (mode Acteur)', desc: 'En mode Acteur, Sentinelle genere des patches et cree automatiquement des Pull Requests sur GitHub.' },
+              { icon: 'fa-code-pull-request', title: 'Auto-fix & Deploy', desc: 'En mode Acteur, Sentinelle genere des patches, cree des Pull Requests, merge et deploie automatiquement.' },
             ].map((f, i) => (
               <div key={i} className="feature-card fade-in" data-delay={i * 120}>
                 <div className="feature-icon"><i className={`fa-solid ${f.icon}`} /></div>
@@ -247,13 +247,13 @@ export default function Home() {
             <div className="mode-card acteur fade-in">
               <span className="mode-badge">Acteur</span>
               <h3>Mode Acteur</h3>
-              <p>Sentinelle agit : il genere des patches et cree des PRs sur GitHub automatiquement.</p>
+              <p>Sentinelle agit : il genere des patches, cree des PRs, merge et deploie automatiquement.</p>
               <ul className="mode-features">
                 <li><i className="fa-solid fa-check" /> Tout le mode Observateur</li>
-                <li><i className="fa-solid fa-check" /> Generation automatique de patches</li>
+                <li><i className="fa-solid fa-check" /> Generation automatique de patches IA</li>
                 <li><i className="fa-solid fa-check" /> Creation de Pull Requests GitHub</li>
-                <li><i className="fa-solid fa-check" /> Rapport de ce qui a ete corrige</li>
-                <li><i className="fa-solid fa-check" /> Rollback possible a tout moment</li>
+                <li><i className="fa-solid fa-check" /> Auto-merge et deploy en production</li>
+                <li><i className="fa-solid fa-check" /> Verification post-deploy automatique</li>
               </ul>
             </div>
           </div>
